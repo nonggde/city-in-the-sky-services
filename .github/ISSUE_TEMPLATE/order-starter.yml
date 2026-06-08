@@ -1,0 +1,53 @@
+name: Public URL AI Audit Report - Starter
+description: Order a USD 19 starter audit for one public URL or public GitHub repository.
+title: "Order: Public URL AI Audit Report - Starter"
+labels: ["order-intake"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for ordering from city in the sky.
+
+        This intake is for public URLs only. Do not include logins, private pages, API keys, credentials, customer data, payment data, private prompts, cookies, private keys, wallet secrets, or regulated data.
+
+        Price: USD 19. Payment can be handled by PayPal invoice/link or crypto invoice before delivery.
+  - type: input
+    id: public_url
+    attributes:
+      label: Public URL
+      description: One public website URL or public GitHub repository URL.
+      placeholder: "https://example.com"
+    validations:
+      required: true
+  - type: input
+    id: audience
+    attributes:
+      label: Audience
+      description: Who is this page or repository trying to reach?
+      placeholder: "indie SaaS founders"
+    validations:
+      required: false
+  - type: textarea
+    id: public_notes
+    attributes:
+      label: Public notes
+      description: Optional public context. Do not include private or sensitive data.
+      placeholder: "What should the audit pay attention to?"
+    validations:
+      required: false
+  - type: dropdown
+    id: payment_route
+    attributes:
+      label: Preferred payment route
+      options:
+        - PayPal invoice/link
+        - Crypto invoice
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety_confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I confirm this order includes only public information and no secrets, credentials, customer data, payment data, private keys, wallet secrets, or regulated data.
+          required: true
