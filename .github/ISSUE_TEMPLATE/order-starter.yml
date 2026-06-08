@@ -10,7 +10,9 @@ body:
 
         This intake is for public URLs only. Do not include logins, private pages, API keys, credentials, customer data, payment data, private prompts, cookies, private keys, wallet secrets, or regulated data.
 
-        Price: USD 19. Payment can be handled by PayPal invoice/link or crypto invoice before delivery.
+        Price: USD 19. Crypto invoice is preferred before delivery. PayPal invoice/link is available as a backup when needed.
+
+        Do not send funds until the scope is confirmed and you receive an invoice with the exact asset, network, amount, and receive address.
   - type: input
     id: public_url
     attributes:
@@ -40,8 +42,22 @@ body:
     attributes:
       label: Preferred payment route
       options:
-        - PayPal invoice/link
         - Crypto invoice
+        - PayPal invoice/link backup
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: crypto_asset
+    attributes:
+      label: Preferred crypto asset
+      options:
+        - USDT
+        - USDC
+        - BTC
+        - ETH
+        - Other supported crypto
+        - PayPal backup
     validations:
       required: true
   - type: checkboxes
