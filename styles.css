@@ -175,6 +175,39 @@ ul {
   background: var(--panel);
 }
 
+.report-page {
+  background: var(--paper);
+}
+
+.report-hero {
+  padding: 72px 24px 44px;
+  background: var(--ink);
+  color: #fff;
+}
+
+.report-hero > * {
+  width: min(920px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.report-body {
+  display: grid;
+  width: min(920px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 36px 0 64px;
+  gap: 18px;
+}
+
+.report-body article {
+  min-height: auto;
+}
+
+.report-body ol {
+  margin: 20px 0 0;
+  padding-left: 22px;
+}
+
 @media (max-width: 760px) {
   .hero {
     min-height: 62vh;
