@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sample LLM Cost Leak Audit | city in the sky</title>
+    <meta
+      name="description"
+      content="Sample LLM cost leak audit report from city in the sky using sanitized aggregate usage only."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="report-page">
+      <section class="report-hero">
+        <p class="eyebrow">city in the sky</p>
+        <h1>Sample LLM Cost Leak Audit</h1>
+        <p class="lead">
+          This demo shows the delivery format for a starter audit. It uses sanitized aggregate
+          usage only and does not include API keys, raw logs, customer data, prompts, credentials,
+          private repositories, or account access.
+        </p>
+        <div class="actions">
+          <a class="button button--primary" href="index.html">Order a starter audit</a>
+          <a class="button" href="https://github.com/nonggde/llm-cost-leak-auditor" rel="noreferrer">View workflow</a>
+        </div>
+      </section>
+
+      <section class="report-body">
+        <article>
+          <h2>Executive Summary</h2>
+          <p>
+            Demo input showed USD 337.30 in known LLM/API spend across five features. A conservative
+            first-pass savings target is USD 118.05, subject to quality testing before production
+            changes.
+          </p>
+          <p>
+            The safest first changes are caching repeated context, capping non-critical output
+            length, and moving low-risk internal tasks to cheaper routes after a small A/B test.
+          </p>
+        </article>
+
+        <article>
+          <h2>Current Cost Map</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Current Model</th>
+                  <th>Known Cost</th>
+                  <th>Risk</th>
+                  <th>Cache Hit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>support-draft</td>
+                  <td>gpt-4.1</td>
+                  <td>USD 190.50</td>
+                  <td>Low</td>
+                  <td>5%</td>
+                </tr>
+                <tr>
+                  <td>seo-tags</td>
+                  <td>gpt-4.1</td>
+                  <td>USD 74.00</td>
+                  <td>Low</td>
+                  <td>0%</td>
+                </tr>
+                <tr>
+                  <td>weekly-summary</td>
+                  <td>gpt-4.1</td>
+                  <td>USD 52.00</td>
+                  <td>Medium</td>
+                  <td>15%</td>
+                </tr>
+                <tr>
+                  <td>checkout-review</td>
+                  <td>gpt-4.1</td>
+                  <td>USD 12.30</td>
+                  <td>High</td>
+                  <td>10%</td>
+                </tr>
+                <tr>
+                  <td>embeddings-search</td>
+                  <td>text-embedding-3-large</td>
+                  <td>USD 8.50</td>
+                  <td>Low</td>
+                  <td>80%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article>
+          <h2>Top Cost Leaks</h2>
+          <ul>
+            <li><strong>support-draft</strong> uses 56.5% of known spend on a low-risk internal route.</li>
+            <li><strong>seo-tags</strong> has zero cache reuse despite repeated input patterns.</li>
+            <li><strong>weekly-summary</strong> averages large outputs and should receive stricter output caps.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Routing Plan</h2>
+          <ul>
+            <li>Test cheaper or cached routes for low-risk support drafts and SEO tags.</li>
+            <li>Use a cheap draft plus stronger final check for medium-risk customer-visible summaries.</li>
+            <li>Keep high-risk checkout review on the stronger model until test data proves a safe fallback.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Implementation Checklist</h2>
+          <ol>
+            <li>Add per-feature usage logging and daily budget alerts.</li>
+            <li>Cap maximum output tokens by route instead of using one global cap.</li>
+            <li>Add cache keys for repeated policy, brand, or context blocks.</li>
+            <li>Run a small A/B test for low-risk draft and extraction tasks.</li>
+            <li>Keep escalation rules for low confidence, policy-sensitive, or final customer output.</li>
+          </ol>
+        </article>
+
+        <article>
+          <h2>Delivery Boundaries</h2>
+          <p>
+            A paid starter audit uses public product context and sanitized aggregate usage only.
+            Do not send API keys, bearer tokens, private prompts, raw production logs, customer data,
+            credentials, private endpoints, payment data, wallet secrets, or regulated data.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

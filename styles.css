@@ -147,6 +147,21 @@ ul {
   padding-left: 22px;
 }
 
+strong {
+  color: var(--ink);
+}
+
+.card-link {
+  margin: 20px 0 0;
+}
+
+.card-link a {
+  color: var(--accent-strong);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .rules {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -206,6 +221,38 @@ ul {
 .report-body ol {
   margin: 20px 0 0;
   padding-left: 22px;
+}
+
+.table-wrap {
+  width: 100%;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  color: var(--ink);
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--line);
+  padding: 12px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: var(--ink);
+  font-size: 0.86rem;
+  text-transform: uppercase;
+}
+
+td {
+  color: var(--muted);
+  font-size: 0.96rem;
 }
 
 @media (max-width: 760px) {
