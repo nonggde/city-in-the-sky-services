@@ -1,0 +1,89 @@
+name: SaaS Competitor Battlecard Order
+description: Order competitor battlecards from public SaaS websites.
+title: "Order: SaaS Competitor Battlecards"
+labels: ["order-intake", "battlecards"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for ordering from city in the sky.
+
+        This service uses public websites only. Do not include account access, private pages, API keys, credentials, customer data, payment data, cookies, private keys, wallet secrets, or regulated data.
+
+        Starter packages: USD 19 for 5 competitor battlecards, USD 49 for 15 competitor battlecards, USD 99+ for a full competitor pack.
+
+        PayPal payment link and crypto invoice are available after scope is confirmed. Do not send funds until scope, amount, payment route, and delivery format are confirmed.
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - USD 19 - 5 competitor battlecards
+        - USD 49 - 15 competitor battlecards
+        - USD 99+ - full competitor pack
+        - Custom batch
+    validations:
+      required: true
+  - type: input
+    id: your_company_url
+    attributes:
+      label: Your public company URL
+      placeholder: "https://example.com"
+    validations:
+      required: true
+  - type: textarea
+    id: competitor_urls
+    attributes:
+      label: Public competitor URLs
+      description: Product pages, pricing pages, feature pages, or comparison pages work best. Paste one URL per line.
+      placeholder: |
+        https://example.org/pricing
+        https://example.net/features
+    validations:
+      required: true
+  - type: textarea
+    id: market_context
+    attributes:
+      label: Market context
+      description: Public or sanitized context only. Describe the category and sales situation.
+      placeholder: "Project management software for startup product and engineering teams."
+    validations:
+      required: true
+  - type: input
+    id: buyer_persona
+    attributes:
+      label: Buyer persona
+      placeholder: "Founder, product lead, engineering manager, sales leader"
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Output language
+      options:
+        - English
+        - Chinese
+        - Bilingual English + Chinese
+    validations:
+      required: true
+  - type: dropdown
+    id: payment_route
+    attributes:
+      label: Preferred payment route
+      options:
+        - PayPal payment link
+        - USDT
+        - USDC
+        - BTC
+        - ETH
+        - Other supported crypto
+        - Not sure yet
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety_confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I confirm this order uses public websites only and includes no secrets, credentials, customer data, payment data, private keys, wallet secrets, or regulated data.
+          required: true

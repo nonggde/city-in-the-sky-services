@@ -10,7 +10,7 @@ body:
 
         This intake is for public or sanitized content only. Do not include logins, private pages, API keys, credentials, customer data, payment data, private prompts, cookies, private keys, wallet secrets, or regulated data.
 
-        Starter price: RMB 299. Crypto invoice is preferred for overseas buyers. PayPal can be used as a backup when needed.
+        Starter price: RMB 299. PayPal payment link and crypto invoice are available after scope is confirmed.
   - type: dropdown
     id: page_type
     attributes:
@@ -63,8 +63,12 @@ body:
     attributes:
       label: Preferred payment route
       options:
-        - Crypto invoice
-        - PayPal backup
+        - PayPal payment link
+        - USDT
+        - USDC
+        - BTC
+        - ETH
+        - Other supported crypto
         - Not sure yet
     validations:
       required: true

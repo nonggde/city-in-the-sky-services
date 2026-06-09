@@ -12,7 +12,7 @@ body:
 
         Starter packages: USD 9 for 10 public website briefs, USD 19 for 25 public website briefs, USD 49 for 25 briefs plus a cleaned outbound sequence.
 
-        Crypto invoice is preferred. PayPal can be used as a backup when needed. Do not send funds until scope is confirmed and you receive the exact asset, network, amount, and receive address.
+        PayPal payment link and crypto invoice are available after scope is confirmed. Do not send funds until scope, amount, payment route, and delivery format are confirmed.
   - type: dropdown
     id: package
     attributes:
@@ -76,8 +76,12 @@ body:
     attributes:
       label: Preferred payment route
       options:
-        - Crypto invoice
-        - PayPal backup
+        - PayPal payment link
+        - USDT
+        - USDC
+        - BTC
+        - ETH
+        - Other supported crypto
         - Not sure yet
     validations:
       required: true
@@ -91,7 +95,7 @@ body:
         - BTC
         - ETH
         - Other supported crypto
-        - PayPal backup
+        - PayPal payment link
     validations:
       required: true
   - type: checkboxes
@@ -101,4 +105,3 @@ body:
       options:
         - label: I confirm this order uses public websites only and includes no secrets, credentials, customer data, payment data, private keys, wallet secrets, or regulated data.
           required: true
-
