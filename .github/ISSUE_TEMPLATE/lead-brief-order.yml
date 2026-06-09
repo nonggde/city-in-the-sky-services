@@ -1,0 +1,104 @@
+name: Website Lead Brief Order
+description: Order lead briefs and outreach drafts from public company websites.
+title: "Order: Website Lead Briefs"
+labels: ["order-intake", "lead-briefs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for ordering from city in the sky.
+
+        This service uses public company websites only. Do not include account access, private pages, API keys, credentials, customer data, payment data, cookies, private keys, wallet secrets, or regulated data.
+
+        Starter packages: USD 9 for 10 public website briefs, USD 19 for 25 public website briefs, USD 49 for 25 briefs plus a cleaned outbound sequence.
+
+        Crypto invoice is preferred. PayPal can be used as a backup when needed. Do not send funds until scope is confirmed and you receive the exact asset, network, amount, and receive address.
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - USD 9 - 10 website lead briefs
+        - USD 19 - 25 website lead briefs
+        - USD 49 - 25 briefs plus cleaned outbound sequence
+        - Custom batch
+    validations:
+      required: true
+  - type: textarea
+    id: public_urls
+    attributes:
+      label: Public website URLs
+      description: Paste one public company website per line. No logins, private dashboards, or personal contact scraping.
+      placeholder: |
+        https://example.com
+        https://example.org
+    validations:
+      required: true
+  - type: textarea
+    id: offer_context
+    attributes:
+      label: Your offer or company context
+      description: Public or sanitized context only. This helps tailor the outreach angle.
+      placeholder: "We help B2B SaaS teams improve trial-to-paid conversion with onboarding analytics."
+    validations:
+      required: true
+  - type: input
+    id: target_buyer
+    attributes:
+      label: Target buyer
+      placeholder: "Founder, growth lead, agency owner, sales manager"
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Output language
+      options:
+        - English
+        - Chinese
+        - Bilingual English + Chinese
+    validations:
+      required: true
+  - type: dropdown
+    id: tone
+    attributes:
+      label: Tone
+      options:
+        - Concise
+        - Friendly
+        - Direct
+        - Technical
+        - Premium consulting
+    validations:
+      required: true
+  - type: dropdown
+    id: payment_route
+    attributes:
+      label: Preferred payment route
+      options:
+        - Crypto invoice
+        - PayPal backup
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: crypto_asset
+    attributes:
+      label: Preferred crypto asset
+      options:
+        - USDT
+        - USDC
+        - BTC
+        - ETH
+        - Other supported crypto
+        - PayPal backup
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety_confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I confirm this order uses public websites only and includes no secrets, credentials, customer data, payment data, private keys, wallet secrets, or regulated data.
+          required: true
+
