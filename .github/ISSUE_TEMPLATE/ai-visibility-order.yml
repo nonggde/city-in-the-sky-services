@@ -1,0 +1,78 @@
+name: AI Search Visibility Audit Order
+description: Order an AI search visibility / GEO readiness audit from a public URL.
+title: "Order: AI Search Visibility Audit"
+labels: ["order-intake", "ai-visibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for ordering from city in the sky.
+
+        This service uses public URLs only. Do not include account access, private pages, API keys, credentials, customer data, payment data, cookies, private keys, wallet secrets, or regulated data.
+
+        Starter packages: USD 19 for one public URL AI search visibility / GEO readiness audit, USD 49 for one audit plus a rewritten answer-ready homepage section.
+
+        PayPal payment link and crypto invoice are available after scope is confirmed. Do not send funds until scope, amount, payment route, and delivery format are confirmed.
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - USD 19 - one public URL AI visibility audit
+        - USD 49 - audit plus answer-ready rewrite
+        - Custom batch
+    validations:
+      required: true
+  - type: input
+    id: target_url
+    attributes:
+      label: Public target URL
+      placeholder: "https://example.com"
+    validations:
+      required: true
+  - type: input
+    id: audience
+    attributes:
+      label: Target audience
+      placeholder: "SaaS founders, product marketers, agency buyers"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Public notes
+      description: Optional public or sanitized context only.
+      placeholder: "What should AI search engines understand about this product, service, or repository?"
+    validations:
+      required: false
+  - type: dropdown
+    id: language
+    attributes:
+      label: Output language
+      options:
+        - English
+        - Chinese
+        - Bilingual English + Chinese
+    validations:
+      required: true
+  - type: dropdown
+    id: payment_route
+    attributes:
+      label: Preferred payment route
+      options:
+        - PayPal payment link
+        - USDT
+        - USDC
+        - BTC
+        - ETH
+        - Other supported crypto
+        - Not sure yet
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety_confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I confirm this order uses public URLs only and includes no secrets, credentials, customer data, payment data, private keys, wallet secrets, or regulated data.
+          required: true

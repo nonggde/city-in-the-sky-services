@@ -6,7 +6,7 @@ Primary offer:
 
 - Website Lead Briefs / Outreach Drafts - Starter, USD 9
 - SaaS Competitor Battlecards - Starter, USD 19
-- Public URL AI Audit Report - Starter, USD 19
+- AI Search Visibility / GEO Audit - Starter, USD 19
 - LLM Cost Leak Audit - Starter, USD 49
 
 Payment:
@@ -28,4 +28,5 @@ Direct order routes:
 - Email: `a13553776411@gmail.com`
 - Lead brief order issue: https://github.com/nonggde/city-in-the-sky-services/issues/new?template=lead-brief-order.yml
 - Battlecard order issue: https://github.com/nonggde/city-in-the-sky-services/issues/new?template=battlecard-order.yml
+- AI visibility order issue: https://github.com/nonggde/city-in-the-sky-services/issues/new?template=ai-visibility-order.yml
 - General order issue: https://github.com/nonggde/city-in-the-sky-services/issues/new?template=order-starter.yml
