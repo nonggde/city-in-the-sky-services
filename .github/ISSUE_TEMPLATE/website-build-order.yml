@@ -1,0 +1,77 @@
+name: Website Build Order - Starter
+description: Order a starter website, landing page, or personal site build.
+title: "Order: Website Build - Starter"
+labels: ["order-intake", "website-build"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for ordering from city in the sky.
+
+        This intake is for public or sanitized content only. Do not include logins, private pages, API keys, credentials, customer data, payment data, private prompts, cookies, private keys, wallet secrets, or regulated data.
+
+        Starter price: RMB 299. Crypto invoice is preferred for overseas buyers. PayPal can be used as a backup when needed.
+  - type: dropdown
+    id: page_type
+    attributes:
+      label: Page type
+      options:
+        - Single-page landing page
+        - Product/service page
+        - Personal portfolio
+        - Simple company homepage
+        - GitHub Pages site
+        - Other public static page
+    validations:
+      required: true
+  - type: input
+    id: reference_site
+    attributes:
+      label: Reference site
+      description: One public reference page or style reference, if available.
+      placeholder: "https://example.com"
+    validations:
+      required: false
+  - type: textarea
+    id: page_goal
+    attributes:
+      label: Page goal
+      description: What should this page help the visitor do or understand?
+      placeholder: "Explain the product, collect leads, or show a portfolio."
+    validations:
+      required: true
+  - type: textarea
+    id: content_assets
+    attributes:
+      label: Available content
+      description: Public or redacted text, images, logo, and notes you already have.
+      placeholder: "Copy, screenshots, logo, and one or two images."
+    validations:
+      required: false
+  - type: dropdown
+    id: delivery_format
+    attributes:
+      label: Delivery format
+      options:
+        - Source files only
+        - Source files plus upload notes
+        - Source files plus GitHub Pages instructions
+    validations:
+      required: true
+  - type: dropdown
+    id: payment_route
+    attributes:
+      label: Preferred payment route
+      options:
+        - Crypto invoice
+        - PayPal backup
+        - Not sure yet
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety_confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I confirm this order includes only public or sanitized material and no secrets, credentials, customer data, payment data, private keys, wallet secrets, or regulated data.
+          required: true
