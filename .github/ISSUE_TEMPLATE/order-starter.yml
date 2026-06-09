@@ -1,24 +1,45 @@
-name: Public URL AI Audit Report - Starter
-description: Order a USD 19 starter audit for one public URL or public GitHub repository.
-title: "Order: Public URL AI Audit Report - Starter"
-labels: ["order-intake"]
+name: Small Digital Service - Starter
+description: Order a small website, code review, landing page audit, or automation plan.
+title: "Order: Small Digital Service - Starter"
+labels: ["order-intake", "small-service"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for ordering from city in the sky.
 
-        This intake is for public URLs only. Do not include logins, private pages, API keys, credentials, customer data, payment data, private prompts, cookies, private keys, wallet secrets, or regulated data.
+        This intake is for public or sanitized material only. Do not include logins, private pages, API keys, credentials, customer data, payment data, private prompts, cookies, private keys, wallet secrets, or regulated data.
 
-        Price: USD 19. Crypto invoice is preferred before delivery. PayPal invoice/link is available as a backup when needed.
+        Starter prices: USD 19+ for focused reports, USD 49+ for static website or automation work. Crypto invoice is preferred before delivery. PayPal invoice/link is available as a backup when needed.
 
         Do not send funds until the scope is confirmed and you receive an invoice with the exact asset, network, amount, and receive address.
-  - type: input
-    id: public_url
+  - type: dropdown
+    id: offer_selected
     attributes:
-      label: Public URL
-      description: One public website URL or public GitHub repository URL.
+      label: Offer selected
+      options:
+        - Static website / landing page
+        - Mini code review / bug risk report
+        - Landing page copy / trust audit
+        - Automation / LLM cost cleanup plan
+        - Public GitHub or website audit
+        - Not sure yet
+    validations:
+      required: true
+  - type: input
+    id: public_input
+    attributes:
+      label: Public URL or sanitized input
+      description: One public website URL, public GitHub repository, public issue, or sanitized brief.
       placeholder: "https://example.com"
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should the deliverable help you fix, ship, understand, or decide?
+      placeholder: "I need a simple page, a bug-risk review, or an automation plan."
     validations:
       required: true
   - type: input
@@ -33,8 +54,8 @@ body:
     id: public_notes
     attributes:
       label: Public notes
-      description: Optional public context. Do not include private or sensitive data.
-      placeholder: "What should the audit pay attention to?"
+      description: Optional public or sanitized context. Do not include private or sensitive data.
+      placeholder: "Scope, preferred style, error summary, or output format."
     validations:
       required: false
   - type: dropdown
