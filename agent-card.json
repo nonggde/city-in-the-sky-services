@@ -12,6 +12,7 @@
       "id": "saas_competitor_battlecards",
       "name": "SaaS Competitor Battlecards",
       "description": "Generate positioning notes, pricing signals, differentiation angles, objection handlers, and sales talk tracks from public SaaS websites.",
+      "landingPageUrl": "https://nonggde.github.io/city-in-the-sky-services/competitor-battlecards.html",
       "sampleUrl": "https://nonggde.github.io/city-in-the-sky-services/battlecard-sample.html",
       "apifyActorUrl": "https://apify.com/city-in-the-sky/saas-competitor-battlecard-generator",
       "orderUrl": "https://github.com/nonggde/city-in-the-sky-services/issues/new?template=battlecard-order.yml",
