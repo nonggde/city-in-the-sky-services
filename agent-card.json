@@ -31,6 +31,7 @@
       "id": "website_lead_briefs",
       "name": "Website Lead Briefs",
       "description": "Turn public company websites into concise lead briefs, buying angles, subject lines, and outreach drafts.",
+      "landingPageUrl": "https://nonggde.github.io/city-in-the-sky-services/website-lead-briefs.html",
       "apifyActorUrl": "https://apify.com/city-in-the-sky/website-lead-brief-generator",
       "orderUrl": "https://github.com/nonggde/city-in-the-sky-services/issues/new?template=lead-brief-order.yml",
       "startingPriceUsd": 9
