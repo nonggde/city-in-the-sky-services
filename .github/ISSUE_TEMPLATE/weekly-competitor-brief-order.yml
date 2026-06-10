@@ -1,0 +1,88 @@
+name: Weekly Competitor Change Brief
+description: Request a weekly public competitor-page change brief.
+title: "Order: Weekly Competitor Change Brief"
+labels: ["order-intake", "weekly-competitor-brief"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for requesting a Weekly Competitor Change Brief from city in the sky.
+
+        This intake is for public competitor pages only. Do not include logins, private pages, API keys, credentials, customer data, payment data, private prompts, cookies, private keys, wallet secrets, KYC material, or regulated data.
+
+        Starter price: USD 49/month for up to 5 public competitor pages. PayPal payment link or crypto invoice is available after scope is confirmed.
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - Starter - USD 49/month - up to 5 public competitor pages
+        - Expanded - USD 99/month - up to 15 public competitor pages
+        - Custom - discuss scope
+    validations:
+      required: true
+  - type: textarea
+    id: your_company
+    attributes:
+      label: Your public company or product page
+      description: A public URL for context.
+      placeholder: "https://example.com"
+    validations:
+      required: true
+  - type: textarea
+    id: competitor_pages
+    attributes:
+      label: Public competitor pages to monitor
+      description: Add public product, pricing, comparison, docs, changelog, or landing page URLs.
+      placeholder: |
+        https://competitor.com/pricing
+        https://competitor.com/changelog
+        https://competitor.com/compare/example
+    validations:
+      required: true
+  - type: textarea
+    id: watch_priorities
+    attributes:
+      label: What changes matter most?
+      description: Pricing, packaging, positioning, docs, integrations, comparison pages, landing pages, or sales objections.
+      placeholder: "Pricing and positioning changes for founder-led B2B SaaS sales."
+    validations:
+      required: true
+  - type: input
+    id: delivery_day
+    attributes:
+      label: Preferred delivery day
+      placeholder: "Monday"
+    validations:
+      required: false
+  - type: dropdown
+    id: output_format
+    attributes:
+      label: Preferred output format
+      options:
+        - Markdown report
+        - Markdown plus table-ready summary
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: payment_route
+    attributes:
+      label: Preferred payment route
+      options:
+        - PayPal payment link
+        - USDT
+        - USDC
+        - BTC
+        - ETH
+        - Other supported crypto
+        - Not sure yet
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety_confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I confirm this order includes only public information and no secrets, credentials, customer data, payment data, private keys, wallet secrets, or regulated data.
+          required: true

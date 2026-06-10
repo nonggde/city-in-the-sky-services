@@ -19,6 +19,16 @@
       "startingPriceUsd": 19
     },
     {
+      "id": "weekly_competitor_change_brief",
+      "name": "Weekly Competitor Change Brief",
+      "description": "Monitor public competitor pages weekly and summarize pricing, packaging, positioning, changelog, docs, and landing-page changes.",
+      "landingPageUrl": "https://nonggde.github.io/city-in-the-sky-services/weekly-competitor-change-brief.html",
+      "sampleUrl": "https://nonggde.github.io/city-in-the-sky-services/battlecard-sample.html",
+      "orderUrl": "https://github.com/nonggde/city-in-the-sky-services/issues/new?template=weekly-competitor-brief-order.yml",
+      "startingPriceUsd": 49,
+      "billingPeriod": "monthly"
+    },
+    {
       "id": "ai_search_visibility_audit",
       "name": "AI Search Visibility / GEO Audit",
       "description": "Review whether public product or service pages are understandable, citable, and answer-ready for AI search systems.",
