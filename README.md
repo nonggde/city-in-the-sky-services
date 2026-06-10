@@ -30,6 +30,7 @@ This page is English-only and safe for global-facing outreach.
 Direct order routes:
 
 - Email: `a13553776411@gmail.com`
+- Order guide: https://nonggde.github.io/city-in-the-sky-services/order.html
 - Lead brief order issue: https://github.com/nonggde/city-in-the-sky-services/issues/new?template=lead-brief-order.yml
 - Battlecard order issue: https://github.com/nonggde/city-in-the-sky-services/issues/new?template=battlecard-order.yml
 - AI visibility order issue: https://github.com/nonggde/city-in-the-sky-services/issues/new?template=ai-visibility-order.yml
