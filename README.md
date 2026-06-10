@@ -18,6 +18,8 @@ Payment:
 Public portfolio:
 
 - https://github.com/nonggde/website-lead-brief-actor
+- https://apify.com/city-in-the-sky/saas-competitor-battlecard-generator
+- https://github.com/nonggde/saas-competitor-battlecard-actor
 - https://github.com/nonggde/public-url-ai-audit-actor
 - https://github.com/nonggde/llm-cost-leak-auditor
 
