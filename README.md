@@ -20,6 +20,7 @@ Public portfolio:
 - https://github.com/nonggde/website-lead-brief-actor
 - https://apify.com/city-in-the-sky/saas-competitor-battlecard-generator
 - https://github.com/nonggde/saas-competitor-battlecard-actor
+- https://nonggde.github.io/city-in-the-sky-services/battlecard-sample.html
 - https://github.com/nonggde/public-url-ai-audit-actor
 - https://github.com/nonggde/llm-cost-leak-auditor
 
