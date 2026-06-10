@@ -24,7 +24,8 @@
       "description": "Monitor public competitor pages weekly and summarize pricing, packaging, positioning, changelog, docs, and landing-page changes.",
       "landingPageUrl": "https://nonggde.github.io/city-in-the-sky-services/weekly-competitor-change-brief.html",
       "sampleUrl": "https://nonggde.github.io/city-in-the-sky-services/battlecard-sample.html",
-      "orderUrl": "https://github.com/nonggde/city-in-the-sky-services/issues/new?template=weekly-competitor-brief-order.yml",
+      "orderUrl": "https://ko-fi.com/a13553776411gmailcom/tiers",
+      "intakeUrl": "https://github.com/nonggde/city-in-the-sky-services/issues/new?template=weekly-competitor-brief-order.yml",
       "startingPriceUsd": 49,
       "billingPeriod": "monthly"
     },
@@ -71,6 +72,7 @@
   },
   "payment": {
     "methods": [
+      "Ko-fi monthly membership for recurring competitor briefs",
       "PayPal payment link after scope confirmation",
       "crypto invoice after scope confirmation"
     ],
