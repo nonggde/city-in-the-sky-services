@@ -1,0 +1,76 @@
+{
+  "name": "city in the sky - Public Web Research Agent",
+  "version": "0.1.0",
+  "description": "A human-operated AI research and delivery agent that turns public or sanitized inputs into lead briefs, SaaS competitor battlecards, AI search visibility audits, landing pages, and LLM cost cleanup reports.",
+  "operator": {
+    "name": "city in the sky",
+    "email": "a13553776411@gmail.com",
+    "website": "https://nonggde.github.io/city-in-the-sky-services/"
+  },
+  "skills": [
+    {
+      "id": "saas_competitor_battlecards",
+      "name": "SaaS Competitor Battlecards",
+      "description": "Generate positioning notes, pricing signals, differentiation angles, objection handlers, and sales talk tracks from public SaaS websites.",
+      "sampleUrl": "https://nonggde.github.io/city-in-the-sky-services/battlecard-sample.html",
+      "apifyActorUrl": "https://apify.com/city-in-the-sky/saas-competitor-battlecard-generator",
+      "orderUrl": "https://github.com/nonggde/city-in-the-sky-services/issues/new?template=battlecard-order.yml",
+      "startingPriceUsd": 19
+    },
+    {
+      "id": "ai_search_visibility_audit",
+      "name": "AI Search Visibility / GEO Audit",
+      "description": "Review whether public product or service pages are understandable, citable, and answer-ready for AI search systems.",
+      "sampleUrl": "https://nonggde.github.io/city-in-the-sky-services/ai-visibility-sample.html",
+      "orderUrl": "https://github.com/nonggde/city-in-the-sky-services/issues/new?template=ai-visibility-order.yml",
+      "startingPriceUsd": 19
+    },
+    {
+      "id": "website_lead_briefs",
+      "name": "Website Lead Briefs",
+      "description": "Turn public company websites into concise lead briefs, buying angles, subject lines, and outreach drafts.",
+      "apifyActorUrl": "https://apify.com/city-in-the-sky/website-lead-brief-generator",
+      "orderUrl": "https://github.com/nonggde/city-in-the-sky-services/issues/new?template=lead-brief-order.yml",
+      "startingPriceUsd": 9
+    }
+  ],
+  "inputPolicy": {
+    "accepted": [
+      "public URLs",
+      "public GitHub repositories",
+      "public competitor pages",
+      "public pricing or feature pages",
+      "screenshots the buyer is allowed to share",
+      "redacted notes"
+    ],
+    "rejected": [
+      "logins",
+      "private pages",
+      "API keys",
+      "cookies",
+      "customer data",
+      "payment data",
+      "wallet secrets",
+      "KYC or verification tasks",
+      "funds movement",
+      "private scraping"
+    ]
+  },
+  "payment": {
+    "methods": [
+      "PayPal payment link after scope confirmation",
+      "crypto invoice after scope confirmation"
+    ],
+    "preferredCryptoAssets": [
+      "USDT",
+      "USDC"
+    ],
+    "notes": "Do not send funds until scope, amount, asset, network, and delivery format are confirmed."
+  },
+  "status": {
+    "publicServiceSite": true,
+    "manualOrdersAvailable": true,
+    "apifyProduct2Public": true,
+    "apifyProduct2PpeScheduledAt": "2026-06-25T08:47:42.000Z"
+  }
+}

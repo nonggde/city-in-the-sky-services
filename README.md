@@ -17,6 +17,7 @@ Payment:
 
 Public portfolio:
 
+- https://nonggde.github.io/city-in-the-sky-services/agent-card.json
 - https://github.com/nonggde/website-lead-brief-actor
 - https://apify.com/city-in-the-sky/saas-competitor-battlecard-generator
 - https://github.com/nonggde/saas-competitor-battlecard-actor
