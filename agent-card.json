@@ -22,6 +22,7 @@
       "id": "ai_search_visibility_audit",
       "name": "AI Search Visibility / GEO Audit",
       "description": "Review whether public product or service pages are understandable, citable, and answer-ready for AI search systems.",
+      "landingPageUrl": "https://nonggde.github.io/city-in-the-sky-services/ai-search-visibility.html",
       "sampleUrl": "https://nonggde.github.io/city-in-the-sky-services/ai-visibility-sample.html",
       "orderUrl": "https://github.com/nonggde/city-in-the-sky-services/issues/new?template=ai-visibility-order.yml",
       "startingPriceUsd": 19

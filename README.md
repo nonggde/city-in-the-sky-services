@@ -23,6 +23,7 @@ Public portfolio:
 - https://github.com/nonggde/saas-competitor-battlecard-actor
 - https://nonggde.github.io/city-in-the-sky-services/competitor-battlecards.html
 - https://nonggde.github.io/city-in-the-sky-services/battlecard-sample.html
+- https://nonggde.github.io/city-in-the-sky-services/ai-search-visibility.html
 - https://github.com/nonggde/public-url-ai-audit-actor
 - https://github.com/nonggde/llm-cost-leak-auditor
 
